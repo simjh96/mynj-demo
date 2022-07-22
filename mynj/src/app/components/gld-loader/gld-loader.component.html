@@ -1,0 +1,21 @@
+<th-canvas (onRender)="this.onBeforeRender()">
+  <th-scene>
+    <th-ambientLight> </th-ambientLight>
+
+    <th-object3D
+      loadGLTF
+      [url]="assetPath1"
+      [rotation]="this.rotation"
+      [position]="[-30, -60, -30]"
+    >
+    </th-object3D>
+
+    <th-pointLight [position]="[10, 10, 10]"></th-pointLight>
+
+    <th-perspectiveCamera
+      [args]="[85, 2, 0.1, 200]"
+      [position]="[30, 30, 30]"
+      [lookAt]="[0, 0, 0]"
+    ></th-perspectiveCamera>
+  </th-scene>
+</th-canvas>

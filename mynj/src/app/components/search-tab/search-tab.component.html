@@ -1,0 +1,15 @@
+<ion-grid class="text-contents">
+  <ion-grid class="title content"> 어느 토지를 거래하시겠어요?</ion-grid>
+  <ion-grid class="text-box content"
+    >토지에 따라 거래할 수 있는 농작물이 달라져요. 마음에 드는 마을과 토지를
+    찾아보세요.</ion-grid
+  >
+  <ion-searchbar
+    placeholder="딸기"
+    inputmode="decimal"
+    type="decimal"
+    (ionChange)="onSearchChange($event)"
+    [debounce]="250"
+    showCancelButton="always"
+  ></ion-searchbar>
+</ion-grid>

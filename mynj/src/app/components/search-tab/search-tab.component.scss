@@ -1,0 +1,16 @@
+.text-contents {
+  display: flex;
+  flex-direction: column;
+  height: 30vh;
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .title {
+  }
+  .text-box {
+  }
+  ion-searchbar {
+  }
+}

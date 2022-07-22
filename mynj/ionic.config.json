@@ -1,0 +1,7 @@
+{
+  "name": "mynj",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

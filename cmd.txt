@@ -1,0 +1,39 @@
+생성
+	ionic start
+
+android build
+	ionic build
+	ionic capacitor add android
+	ionic capacitor build android   # just build initial framework
+	ionic capacitor copy   # copy web assets to native platforms
+		ionic capacitor sync   # build+copy+add   # 그냥 이거 하나 하면 위 세개 필요 없을듯?
+	ionic capacitor open android   # open ide
+
+three.js
+	그냥 three.js 써도 되고
+		주로 service로 만들어서 삽입하더라...
+	ngx-three로 편하게 써도 됨
+		NgxThreeModule 만 module 에 import 해주면 그냥 tag에서 바로 사용됨 다른거 필요 x
+		npm info ngx-three peerDependencies 해서 버전 맞추고...
+			npm audit fix --force 같은거 해버리면 pakage.json 버전 안맞아서
+			다 고치고 npm install 해줘야 할수도 있음
+
+	https://demike.github.io/ngx-three/loader-example
+		dependency 가 rxjs 랑도 맞아야함... 기본이 6버전인데 위 링크 package.json 보고 맞춰놔야함
+
+https://www.npmjs.com/package/ngx-three
+	mouse event 만들어
+
+
+ghpage
+	$ npm i angular-cli-ghpages --save
+		install 할때만
+	$ ionic build --prod -- --base-href https://simjh96.github.io/my-farm-trials/mynj/
+	$ npx angular-cli-ghpages --dir=www
+
+		my-farm-01 까지 해놓고 뒤로 url 걸면 다른 폴더 my-farm-trials/my-farm-01 도 사용 가능
+
+pinch zoom(https://www.npmjs.com/package/ngx-pinch-zoom)
+	npm i ngx-pinch-zoom
+		Cannot find name 'VisibilityState'. Did you mean 'XRVisibilityState'?
+		이거 바꿔주니까 그냥 됨
