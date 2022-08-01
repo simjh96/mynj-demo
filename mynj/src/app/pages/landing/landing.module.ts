@@ -14,8 +14,8 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    ComponentsModule,
     LandingPageRoutingModule,
+    ComponentsModule,
   ],
   declarations: [LandingPage],
 })

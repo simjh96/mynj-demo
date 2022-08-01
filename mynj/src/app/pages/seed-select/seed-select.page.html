@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title class="header-title">프로필 NFT </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-search-tab
+    [title]="'오늘은 어떤 씨앗을 심어볼까요?'"
+    [textBox]="'토지에 따라 거래할 수 있는 농작물이 달라져요.
+마음에 드는 작물를 찾아보세요.'"
+  ></app-search-tab>
+  <app-seed-fall></app-seed-fall>
+</ion-content>

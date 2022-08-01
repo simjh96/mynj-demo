@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+
 import { IonicModule } from '@ionic/angular';
 
-import { TownPageRoutingModule } from './town-routing.module';
-import { TownPage } from './town.page';
+import { SeedSelectPageRoutingModule } from './seed-select-routing.module';
+
+import { SeedSelectPage } from './seed-select.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -12,9 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    TownPageRoutingModule,
+    SeedSelectPageRoutingModule,
     ComponentsModule,
   ],
-  declarations: [TownPage],
+  declarations: [SeedSelectPage],
 })
-export class TownPageModule {}
+export class SeedSelectPageModule {}

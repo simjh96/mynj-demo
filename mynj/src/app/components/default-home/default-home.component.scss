@@ -2,49 +2,6 @@ ion-content {
   height: 100%;
 }
 
-.greeting-container {
-  padding-bottom: 0px;
-
-  .greeting-wrapper {
-    padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .text {
-      font-size: 16px;
-    }
-
-    .avatar {
-      margin-right: 10px;
-      width: 30px;
-      height: 30px;
-    }
-  }
-}
-
-.shoutout-container {
-  padding-top: 0px;
-  padding-bottom: 20px;
-
-  .shoutout-wrapper {
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 20px;
-    padding-right: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .text {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-}
-
 .report-date {
   padding-left: 25px;
   padding-right: 25px;

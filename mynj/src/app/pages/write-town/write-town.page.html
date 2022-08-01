@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text=""></ion-back-button>
+    </ion-buttons>
+    <ion-title class="header-title"> 글쓰기 </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" scrollEvents="true">
+  <ion-item>
+    <ion-icon name="pizza" slot="start"></ion-icon>
+  </ion-item>
+  <ion-item>
+    <ion-textarea
+      rows="30"
+      cols="20"
+      placeholder="오늘은 어떤 이야기를 나눠볼까요?"
+    ></ion-textarea>
+  </ion-item>
+</ion-content>

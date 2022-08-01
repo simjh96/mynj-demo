@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { TownPage } from './town.page';
+import { MaskSelectPage } from './mask-select.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: TownPage,
-   }
+    component: MaskSelectPage
+  }
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class TownPageRoutingModule {}
+export class MaskSelectPageRoutingModule {}

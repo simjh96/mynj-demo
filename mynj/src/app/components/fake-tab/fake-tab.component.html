@@ -1,0 +1,12 @@
+<ion-toolbar class="tabBar">
+  <ion-row>
+    <ion-button
+      *ngFor="let tab of tabInput.tabs"
+      fill="none"
+      (click)="onTabChange(tab.url)"
+    >
+      <ion-icon [name]="tab.icon"></ion-icon>
+      <ion-label>{{ tab.label }}</ion-label>
+    </ion-button>
+  </ion-row>
+</ion-toolbar>

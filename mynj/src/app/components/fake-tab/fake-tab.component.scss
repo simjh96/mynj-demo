@@ -1,0 +1,20 @@
+.tabBar {
+  opacity: 0.7;
+  ion-row {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+ion-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  ion-icon,
+  ion-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+  }
+}

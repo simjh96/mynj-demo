@@ -14,6 +14,12 @@ import { CircleSwiperComponent } from './circle-swiper/circle-swiper.component';
 import { AlertComponent } from './alert/alert.component';
 import { GridViewComponent } from './grid-view/grid-view.component';
 import { FeedCardComponent } from './feed-card/feed-card.component';
+import { PopUpComponent } from './pop-up/pop-up.component';
+import { DefaultHomeComponent } from './default-home/default-home.component';
+import { FakeTabComponent } from './fake-tab/fake-tab.component';
+import { MarketComponent } from './market/market.component';
+import { TownComponent } from './town/town.component';
+import { GreetingComponent } from './greeting/greeting.component';
 
 @NgModule({
   imports: [
@@ -25,26 +31,38 @@ import { FeedCardComponent } from './feed-card/feed-card.component';
     SwiperModule,
   ],
   declarations: [
-    GldLoaderComponent,
-    MapComponent,
-    SearchTabComponent,
-    ModalComponent,
-    SeedFallComponent,
-    CircleSwiperComponent,
     AlertComponent,
-    GridViewComponent,
+    CircleSwiperComponent,
+    DefaultHomeComponent,
+    FakeTabComponent,
     FeedCardComponent,
+    GldLoaderComponent,
+    GreetingComponent,
+    GridViewComponent,
+    MapComponent,
+    MarketComponent,
+    ModalComponent,
+    PopUpComponent,
+    SearchTabComponent,
+    SeedFallComponent,
+    TownComponent,
   ],
   exports: [
-    GldLoaderComponent,
-    MapComponent,
-    SearchTabComponent,
-    ModalComponent,
-    SeedFallComponent,
-    CircleSwiperComponent,
     AlertComponent,
-    GridViewComponent,
+    CircleSwiperComponent,
+    DefaultHomeComponent,
+    FakeTabComponent,
     FeedCardComponent,
+    GldLoaderComponent,
+    GreetingComponent,
+    GridViewComponent,
+    MapComponent,
+    MarketComponent,
+    ModalComponent,
+    PopUpComponent,
+    SearchTabComponent,
+    SeedFallComponent,
+    TownComponent,
   ],
 })
 export class ComponentsModule {}

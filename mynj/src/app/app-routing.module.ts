@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'landing',
     pathMatch: 'full',
   },
   {
@@ -12,11 +12,7 @@ const routes: Routes = [
     loadChildren: () =>
       import('./pages/home/home.module').then((m) => m.HomePageModule),
   },
-  {
-    path: 'landing',
-    loadChildren: () =>
-      import('./pages/landing/landing.module').then((m) => m.LandingPageModule),
-  },
+
   {
     path: 'map-select',
     loadChildren: () =>
@@ -26,21 +22,24 @@ const routes: Routes = [
   },
 
   {
-    path: 'town',
-    children: [
-      {
-        path: '',
-        loadChildren: () =>
-          import('./pages/town/town.module').then((m) => m.TownPageModule),
-      },
-    ],
+    path: 'landing',
+    loadChildren: () =>
+      import('./pages/landing/landing.module').then((m) => m.LandingPageModule),
   },
   {
-    path: 'alert-landing',
+    path: 'write-town',
     loadChildren: () =>
-      import('./pages/alert-landing/alert-landing.module').then(
-        (m) => m.AlertLandingPageModule
+      import('./pages/write-town/write-town.module').then(
+        (m) => m.WriteTownPageModule
       ),
+  },
+  {
+    path: 'mask-select',
+    loadChildren: () => import('./pages/mask-select/mask-select.module').then( m => m.MaskSelectPageModule)
+  },
+  {
+    path: 'seed-select',
+    loadChildren: () => import('./pages/seed-select/seed-select.module').then( m => m.SeedSelectPageModule)
   },
 ];
 

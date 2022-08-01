@@ -16,7 +16,7 @@
     <ion-grid class="img-tiles">
       <img
         class="img-box"
-        *ngFor="let idx of [1, 2, 3, 4, 5, 6, 7, 8, 9]"
+        *ngFor="let idx of ['1', '2', '3', '4', '5', '6', '7', '8', '9']"
         [src]="this.allMagazineDetails[idx].image"
         (click)="openPage(idx)"
       />

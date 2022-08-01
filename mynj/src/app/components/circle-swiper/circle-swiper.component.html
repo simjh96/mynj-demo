@@ -2,7 +2,9 @@
 <ion-grid class="my-seed-container">
   <ion-grid class="top-wrapper"
     ><ion-text class="my-seed-header"> {{ title }} </ion-text
-    ><ion-text class="more" *ngIf="isMore">더보기 ></ion-text></ion-grid
+    ><ion-text class="more" *ngIf="isMore" (click)="openPage(url)"
+      >더보기 ></ion-text
+    ></ion-grid
   >
   <ion-text class="my-seed-subheader" *ngIf="subTitle !== 'subtitle'">
     {{ subTitle }}

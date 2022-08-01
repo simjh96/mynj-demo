@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { AlertLandingPage } from './alert-landing.page';
+import { FakeTabComponent } from './fake-tab.component';
 
-describe('AlertLandingPage', () => {
-  let component: AlertLandingPage;
-  let fixture: ComponentFixture<AlertLandingPage>;
+describe('FakeTabComponent', () => {
+  let component: FakeTabComponent;
+  let fixture: ComponentFixture<FakeTabComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ AlertLandingPage ],
+      declarations: [ FakeTabComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(AlertLandingPage);
+    fixture = TestBed.createComponent(FakeTabComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

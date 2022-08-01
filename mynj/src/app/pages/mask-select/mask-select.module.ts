@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AlertLandingPageRoutingModule } from './alert-landing-routing.module';
+import { MaskSelectPageRoutingModule } from './mask-select-routing.module';
 
-import { AlertLandingPage } from './alert-landing.page';
+import { MaskSelectPage } from './mask-select.page';
 import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { ComponentsModule } from 'src/app/components/components.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    AlertLandingPageRoutingModule,
+    MaskSelectPageRoutingModule,
     ComponentsModule,
   ],
-  declarations: [AlertLandingPage],
+  declarations: [MaskSelectPage],
 })
-export class AlertLandingPageModule {}
+export class MaskSelectPageModule {}
