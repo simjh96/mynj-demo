@@ -37,3 +37,9 @@ pinch zoom(https://www.npmjs.com/package/ngx-pinch-zoom)
 	npm i ngx-pinch-zoom
 		Cannot find name 'VisibilityState'. Did you mean 'XRVisibilityState'?
 		이거 바꿔주니까 그냥 됨
+
+
+npm install gsap
+
+npm i swiper
+global.scss

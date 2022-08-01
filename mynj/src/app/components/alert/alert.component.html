@@ -1,0 +1,21 @@
+<!-- 내가 심은 씨앗: 오늘 (temp) -->
+<ion-grid style="margin-bottom: 15px">
+  <ion-text class="report-date"> 오늘 </ion-text>
+
+  <ion-grid
+    class="planted-seed-container"
+    *ngFor="let item of items.slice(0, 2)"
+  >
+    <ion-card class="ion-no-margin">
+      <ion-card-content class="planted-seed-wrapper">
+        <div class="planted-seed-alarm-text-wrapper">
+          <p class="seed-name">{{ item.subtype }} {{ item.type }}</p>
+          <p class="alarm-text">새로운 재배일지가 올라왔어요!</p>
+        </div>
+        <div class="planted-seed-image-wrapper">
+          <img class="image" [src]="item.imgUrl" />
+        </div>
+      </ion-card-content>
+    </ion-card>
+  </ion-grid>
+</ion-grid>

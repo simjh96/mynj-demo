@@ -1,0 +1,21 @@
+<!-- 마이씨앗 -->
+<ion-grid class="my-seed-container">
+  <ion-grid class="top-wrapper"
+    ><ion-text class="my-seed-header"> {{ title }} </ion-text
+    ><ion-text class="more" *ngIf="isMore">더보기 ></ion-text></ion-grid
+  >
+  <ion-text class="my-seed-subheader" *ngIf="subTitle !== 'subtitle'">
+    {{ subTitle }}
+  </ion-text>
+  <swiper [config]="swiperConfig">
+    <ng-template swiperSlide *ngFor="let item of items">
+      <ion-grid class="my-seed-wrapper">
+        <div class="profile">
+          <ion-avatar class="avatar">
+            <ion-img [src]="item.imgUrl"></ion-img>
+          </ion-avatar>
+        </div>
+      </ion-grid>
+    </ng-template>
+  </swiper>
+</ion-grid>

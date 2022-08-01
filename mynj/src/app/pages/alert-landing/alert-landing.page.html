@@ -1,0 +1,26 @@
+<ion-content>
+  <!-- 인사 & 프로필 -->
+  <ion-grid class="greeting-container">
+    <ion-row>
+      <ion-col class="greeting-wrapper">
+        <ion-text class="text"> 안녕하세요 <b>V</b> 님,</ion-text>
+        <ion-avatar class="avatar">
+          <ion-img src="../../assets/images/farmer.jpg"></ion-img>
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!-- 외침 -->
+  <ion-grid class="shoutout-container">
+    <ion-row>
+      <ion-col class="shoutout-wrapper">
+        <h3 class="text"><b> 오늘의 소식입니다! </b></h3>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <app-alert></app-alert>
+  <app-alert></app-alert>
+  <app-circle-swiper [title]="'마이씨앗'"></app-circle-swiper>
+</ion-content>

@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { MapSelectPageRoutingModule } from './map-select-routing.module';
 
 import { MapSelectPage } from './map-select.page';
+import { ComponentsModule } from 'src/app/components/components.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    MapSelectPageRoutingModule
+    MapSelectPageRoutingModule,
+    ComponentsModule,
   ],
-  declarations: [MapSelectPage]
+  declarations: [MapSelectPage],
 })
 export class MapSelectPageModule {}

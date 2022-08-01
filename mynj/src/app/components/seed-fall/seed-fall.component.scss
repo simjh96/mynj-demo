@@ -1,0 +1,20 @@
+ion-grid {
+  position: relative;
+}
+#featureBackground {
+  position: absolute;
+  height: 70vh;
+  width: 120vw;
+  left: -15vw;
+  top: 30vh;
+  overflow: hidden;
+}
+
+.ball {
+  position: absolute;
+  object-fit: cover;
+  border-radius: 50%;
+  will-change: transform;
+  text-align: center;
+  border: 10px solid #def1dd;
+}

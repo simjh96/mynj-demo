@@ -1,0 +1,52 @@
+.current-event {
+  .desc {
+    margin: 10px;
+    .title {
+      font-weight: bolder;
+      font-size: x-large;
+    }
+    .entry {
+      display: flex;
+      align-items: center;
+      ion-chip {
+        ion-label {
+        }
+      }
+      p {
+        margin: 0 0 0 10px;
+        padding: 0;
+      }
+    }
+    .desc-txt {
+      margin-top: 5px;
+    }
+    .entry-status {
+      font-weight: bold;
+    }
+    .img-tiles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 15px 0;
+
+      img {
+        width: 25vw;
+        height: 25vw;
+        object-fit: cover;
+        margin-right: 2px;
+        margin-bottom: 2px;
+      }
+    }
+    .more {
+      margin-top: 5px;
+      width: 100%;
+      color: black;
+      --background: #fff !important;
+    }
+    .join {
+      margin-top: 5px;
+      width: 100%;
+      --background: rgb(52, 204, 72) !important;
+    }
+  }
+}

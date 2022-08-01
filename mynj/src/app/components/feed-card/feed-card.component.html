@@ -1,0 +1,25 @@
+<ion-item class="item">
+  <ion-avatar slot="start" class="avatar">
+    <img [src]="f.profileImgUrl" class="img" />
+  </ion-avatar>
+  <ion-label class="label">{{ f.nickname }}</ion-label>
+</ion-item>
+<img [src]="f.imgUrl" *ngIf="f.imgUrl" class="image" />
+<!-- Card: Comments, Likes Button -->
+<ion-buttons>
+  <ion-button>
+    <ion-icon name="chatbubble-ellipses-outline" class="icon"></ion-icon>
+    <ion-label class="label"> {{ f.comments }} </ion-label>
+  </ion-button>
+  <ion-button>
+    <ion-icon name="heart-outline" class="icon"></ion-icon>
+    <ion-label class="label"> {{ f.likes }} </ion-label>
+  </ion-button>
+</ion-buttons>
+
+<!-- Card: Content -->
+<ion-row>
+  <ion-col class="content">
+    <ion-text> {{ f.content }} </ion-text>
+  </ion-col>
+</ion-row>

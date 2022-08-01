@@ -1,0 +1,60 @@
+.item {
+  --border-color: #fff;
+  .avatar {
+    padding: 3px 0 0 0;
+    margin: 3px 3px 0 0;
+    .img {
+      width: 80%;
+      height: 80%;
+    }
+  }
+  .label {
+    width: 80%;
+    height: 80%;
+    padding-top: 9px;
+  }
+}
+
+.feed-wrapper {
+  margin-top: 15px;
+  margin-bottom: 6px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  border-radius: 0px;
+
+  .date {
+    font-size: 10px;
+    text-align: right;
+    padding-bottom: 0px;
+  }
+
+  .nickname {
+    font-size: 12px;
+    padding-top: 0px;
+    color: rgb(112, 112, 111);
+  }
+
+  .content {
+    font-size: 14px;
+    color: black;
+  }
+
+  .image {
+    margin-top: 3px;
+  }
+
+  .icon {
+    font-size: 14px;
+    color: grey;
+  }
+
+  .label {
+    font-size: 14px;
+    color: grey;
+    margin-left: 2px;
+  }
+}

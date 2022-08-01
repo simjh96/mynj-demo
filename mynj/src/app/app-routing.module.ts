@@ -14,11 +14,33 @@ const routes: Routes = [
   },
   {
     path: 'landing',
-    loadChildren: () => import('./pages/landing/landing.module').then( m => m.LandingPageModule)
+    loadChildren: () =>
+      import('./pages/landing/landing.module').then((m) => m.LandingPageModule),
   },
   {
     path: 'map-select',
-    loadChildren: () => import('./pages/map-select/map-select.module').then( m => m.MapSelectPageModule)
+    loadChildren: () =>
+      import('./pages/map-select/map-select.module').then(
+        (m) => m.MapSelectPageModule
+      ),
+  },
+
+  {
+    path: 'town',
+    children: [
+      {
+        path: '',
+        loadChildren: () =>
+          import('./pages/town/town.module').then((m) => m.TownPageModule),
+      },
+    ],
+  },
+  {
+    path: 'alert-landing',
+    loadChildren: () =>
+      import('./pages/alert-landing/alert-landing.module').then(
+        (m) => m.AlertLandingPageModule
+      ),
   },
 ];
 

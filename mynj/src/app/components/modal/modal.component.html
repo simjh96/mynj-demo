@@ -1,0 +1,68 @@
+<ion-app>
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>App</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content>
+    <ion-grid class="bg" (click)="setOpen()">
+      <ion-grid class="text">
+        푸르른 달 고요한 어둠 속, 가면을 쓰고 나타난 신묘한 이리상단. 직접 심고
+        수확하는 나만의 농장에서 주어진 운명을 바꾸고 세상을 항해하기 위한
+        여정이 시작된다.</ion-grid
+      >
+      <ion-grid class="next">접속... >>></ion-grid>
+      <ion-modal
+        #modal
+        [initialBreakpoint]="0.5"
+        [breakpoints]="[0, 0.3, 0.5, 0.75]"
+        [isOpen]="isModalOpen"
+      >
+        <ng-template>
+          <ion-content>
+            <ion-grid class="wrapper">
+              <ion-grid class="login-wrapper ion-margin-top">
+                <ion-img src="assets/icon/farmer.svg"> </ion-img>
+                <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+                  <ion-grid class="input-box ion-margin-top">
+                    <label for="nickname">닉네임</label
+                    ><input
+                      name="nickname"
+                      placeholder="닉네임을 입력해주세요"
+                      (click)="modal.setCurrentBreakpoint(0.75)"
+                      ngModel
+                    />
+                  </ion-grid>
+                  <ion-grid class="input-box ion-margin-top">
+                    <label for="password">비밀번호</label
+                    ><input
+                      type="password"
+                      name="password"
+                      placeholder="가입시 비밀번호를 입력해주세요"
+                      (click)="modal.setCurrentBreakpoint(0.75)"
+                      ngModel
+                    />
+                  </ion-grid>
+                  <button
+                    class="custom-button ion-margin-top ion-margin-bottom text-size-md"
+                  >
+                    마이 계정으로 로그인
+                  </button>
+                </form>
+              </ion-grid>
+
+              <ion-grid class="join-wrapper ion-margin-top">
+                <img
+                  src="assets/icon/kakao_login_medium_wide.png"
+                  alt="카카오 로그인 버튼"
+                  class="ion-margin-top ion-margin-bottom"
+                  (click)="kakaoLogin()"
+                />
+              </ion-grid>
+            </ion-grid>
+          </ion-content>
+        </ng-template>
+      </ion-modal>
+    </ion-grid>
+  </ion-content>
+</ion-app>

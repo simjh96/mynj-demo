@@ -2,15 +2,41 @@
   display: flex;
   flex-direction: column;
   height: 25vh;
+
   .content {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
   .title {
+    width: 100%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 1.5rem;
   }
   .text-box {
+    padding-top: 5px;
+
+    font-size: 0.8rem;
   }
   ion-searchbar {
+    position: relative;
+    padding-top: 0;
+    --background: #fff !important;
+    &::after {
+      pointer-events: none;
+      content: "";
+      position: absolute;
+      height: 60%;
+      width: 95%;
+      border-radius: 15px;
+      border: 1px solid rgb(49, 47, 47);
+      left: 5px;
+    }
+  }
+  .non-coverable {
+    padding: 0;
+    margin: 0;
   }
 }
