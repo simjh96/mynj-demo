@@ -3,6 +3,7 @@ import {
   AfterViewInit,
   Component,
   ElementRef,
+  Input,
   OnInit,
   Renderer2,
 } from '@angular/core';
@@ -15,6 +16,7 @@ import gsap from 'gsap';
   styleUrls: ['./seed-fall.component.scss'],
 })
 export class SeedFallComponent implements AfterViewInit, OnInit {
+  @Input() url = 'assets/images/contents/fruits/fruit';
   public balls = [];
   public _balls = [];
   public ballCount = 22;
@@ -317,7 +319,7 @@ export class SeedFallComponent implements AfterViewInit, OnInit {
   mkImgUrls(mx) {
     let imgUrls = [];
     for (let i = 1; i <= mx; i++) {
-      imgUrls.push(`assets/images/contents/fruits/fruit${i}.jpg`);
+      imgUrls.push(`${this.url}${i}.jpg`);
     }
     return imgUrls;
   }
