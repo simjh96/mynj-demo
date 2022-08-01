@@ -43,3 +43,12 @@ npm install gsap
 
 npm i swiper
 global.scss
+
+
+android ~ does not exist error
+upgrade android gradle plugin
+npm install @capacitor/android@3.0.0-beta.3
+
+npm install jetifier
+npx jetify
+npx cap sync android

@@ -1,2 +1,4 @@
-<app-modal *ngIf="!isShow"></app-modal>
-<app-pop-up *ngIf="isShow" (click)="isShow = false"></app-pop-up>
+<ion-content [fullscreen]="true">
+  <app-modal *ngIf="!isShow"></app-modal>
+  <app-pop-up *ngIf="isShow" (click)="isShow = false"></app-pop-up>
+</ion-content>

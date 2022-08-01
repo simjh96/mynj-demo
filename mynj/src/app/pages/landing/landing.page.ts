@@ -8,8 +8,8 @@ import { Component, OnInit } from '@angular/core';
 export class LandingPage {
   isShow = true;
   constructor() {
-    setTimeout(() => {
-      this.isShow = false;
-    }, 4000);
+    // setTimeout(() => {
+    //   this.isShow = false;
+    // }, 10000);
   }
 }
